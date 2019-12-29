@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StarLayout">
+        <attr name="center" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TitleCircleImageView">
+        <attr name="tciv_title" format="string"></attr>
+    </declare-styleable>
+
+</resources>

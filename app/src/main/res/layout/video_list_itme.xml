@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="150dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginStart="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin"
+    android:background="@drawable/round_rectangle_bg">
+    <ImageView
+        android:id="@+id/video_tumb"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:src="@mipmap/liu_yi_fei"></ImageView>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="6"
+        android:background="@color/half_radius_rectangle"
+        >
+        <TextView
+            android:id="@+id/video_time_length_and_size"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:text="time and size"
+            android:layout_column="0"
+            android:layout_columnSpan="5"
+            android:layout_row="0"></TextView>
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="time and size"
+            android:layout_column="0"
+            android:layout_columnSpan="5"
+            android:layout_row="1"
+            android:layout_marginStart="@dimen/margin"></TextView>
+
+        <ImageView
+            android:id="@+id/video_start"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_start_display_btn"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:layout_gravity="right|center_vertical"
+            android:layout_rowSpan="2">
+        </ImageView>
+    </GridLayout>
+</RelativeLayout>

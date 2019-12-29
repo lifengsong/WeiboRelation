@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.streestone.cutomizedview.StarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.streestone.cutomizedview.TitleCircleImageView
+        android:id="@+id/liu_yi_fei"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/liu_yi_fei"
+        app:layout_constraintCircleAngle="70"
+        app:layout_constraintCircle="@id/center"
+        app:layout_constraintCircleRadius="120dp"
+        app:tciv_title="张子枫"
+        >
+    </com.streestone.cutomizedview.TitleCircleImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/liu_yi_fei"
+        app:layout_constraintStart_toStartOf="@+id/liu_yi_fei"
+        app:layout_constraintBottom_toBottomOf="@+id/liu_yi_fei"
+        android:text="刘亦菲"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        >
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="TODO">
+    </de.hdodenhof.circleimageview.CircleImageView>
+</com.streestone.cutomizedview.StarLayout>
